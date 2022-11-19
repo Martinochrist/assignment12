@@ -62,7 +62,7 @@
 
 
 .feed {
-    background-color: rgba(255, 0, 191, 0.733);
+    background-image: linear-gradient(blue, red,blue);
     width: 300px;
     height: 150px;
     margin-top: 50px;
@@ -199,6 +199,7 @@ h3 {
 }
 
 ul {
+    list-style: none;
     margin-left: 30px;
     margin-top: 20px;
 
@@ -209,6 +210,23 @@ li {
 
 }
 
+li:before {
+    content: "• ";
+    padding-right: 5px;
+    color: green;
+  }
+  
+  li:nth-child(1):before {
+    color: green;
+  }
+  
+  li:nth-child(2):before {
+    color: red;
+  }
+  
+  li:nth-child(3):before {
+    color: blue;
+  }
 .plan4 {
     margin-left: 150px;
     font-size: 20px;
@@ -876,6 +894,7 @@ h3 {
 }
 
 ul {
+    list-style: none;
     margin-left: 20px;
     margin-top: 20px;
     text-decoration: none;
@@ -886,6 +905,24 @@ li {
     color: rgb(133, 134, 134);
 
 }
+
+li:before {
+    content: "• ";
+    padding-right: 5px;
+    color: green;
+  }
+  
+  li:nth-child(1):before {
+    color: green;
+  }
+  
+  li:nth-child(2):before {
+    color: red;
+  }
+  
+  li:nth-child(3):before {
+    color: blue;
+  }
 
 .plan4 {
     margin-left: 4px;
@@ -1161,52 +1198,55 @@ li {
 
 }
 
+/* for mobile phone  */
+
 @media screen  and (max-width: 400px) {
     .bodd {
         background-color: rgb(228, 228, 228);
-         width: 100vw; 
+    
     }
     .holdflex1 {
         display: flex;
-        
+        flex-direction: column;
         width: 100vw;
     }
     
     
     .holdflex2 {
         display: flex;
+        flex-direction: column;
 
         width: 100vw;
     }
     
     .holdflex3 {
         display: flex;
-       
+        flex-direction: column;
         width: 100vw;
     }
     
     
     .holdflex4 {
         display: flex;
-        
+        flex-direction: column;
         width: 100vw;
     }
     
     .holdflex5 {
         display: flex;
-        
+        flex-direction: column;
         width: 100vw;
     }
     
     .holdflex6 {
         display: flex;
-    
+        flex-direction: column;
         width: 100vw;
     }
     
     .holdflex7 {
         display: flex;
-       
+        flex-direction: column;
         width: 100vw;
     }
 
@@ -1216,10 +1256,10 @@ li {
 
 .feed {
     background-color: rgba(255, 0, 191, 0.733);
-    width: 100px;
+    width: 320px;
     height: 150px;
     margin-top: 50px;
-    margin-left: 5px;
+    margin-left: 15px;
     border-radius: 10px;
     color: white;
 
@@ -1242,12 +1282,12 @@ li {
 
 
 .dome1 {
-    width:250px;
+    width:320px;
     height: 90px;
     margin-top:70px;
     background-color: rgb(2, 5, 54);
     color: white;
-    margin-left: 8px;
+    margin-left: 15px;
     border-radius: 5px;
 }
 
@@ -1256,17 +1296,18 @@ li {
 }
 
 .bb {
+    display: none;
 
     margin-left: 5px;
 }
 
 .bc {
+    display: none;
     margin-left: 5px;
     color: rgb(180, 177, 177);
 }
 
 .bd {
-    margin-left: 150px;
     margin-top: 13px;
     width: 100px;
     height: 30px;
@@ -1284,13 +1325,13 @@ li {
 
 .feed1 {
     background-color: rgb(252, 252, 252);
-    width: 120px;
+    width: 320px;
     height: 200px;
-    margin-top: 20px;
-    margin-left: 5px;
+    margin-top: 30px;
+    margin-left: 15px;
     border-radius: 9px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
 }
 
@@ -1381,10 +1422,10 @@ li {
 
 .dome2 {
 
-    width: 230px;
-    height: 200px;
+    width: 320px;
+    height: 150px;
     background-color: rgb(252, 252, 252);
-    margin-left: 5px;
+    margin-left: 15px;
     border-radius: 4px;
     display: inline-flex;
     text-align: center;
@@ -1454,6 +1495,7 @@ h3 {
 }
 
 ul {
+    list-style: none;
     margin-left: 20px;
     margin-top: 20px;
     text-decoration: none;
@@ -1465,6 +1507,23 @@ li {
 
 }
 
+li:before {
+    content: "• ";
+    padding-right: 5px;
+    color: green;
+  }
+  
+  li:nth-child(1):before {
+    color: green;
+  }
+  
+  li:nth-child(2):before {
+    color: red;
+  }
+  
+  li:nth-child(3):before {
+    color: blue;
+  }
 .plan4 {
     margin-left: 4px;
     font-size: 10px;
@@ -1491,10 +1550,10 @@ li {
 
 .dome3 {
 
-    width: 220px;
-    height: 200px;
+    width: 320px;
+    height: 150px;
     background-color: rgb(252, 252, 252);
-    margin-left: 5px;
+    margin-left: 15px;
     margin-top: 20px;
     text-align: center;
     display: inline-flex;
@@ -1544,10 +1603,11 @@ li {
 
 .dome4 {
 
-    width: 220px;
-    height: 200px;
+    width: 320px;
+    height: 150px;
     background-color: rgb(252, 252, 252);
-    margin-left: 140px;
+    margin-left: 19px;
+    margin-top: 20px;
     text-align: center;
     display: inline-flex;
 
@@ -1592,11 +1652,11 @@ li {
 
 .dome5 {
 
-    width: 220px;
-    height: 200px;
+    width: 320px;
+    height: 150px;
     background-color: rgb(252, 252, 252);
-    margin-left: 140px;
-    margin-top: 100px;
+    margin-left: 19px;
+    margin-top: 20px;
     text-align: center;
     display: inline-flex;
 
@@ -1644,11 +1704,11 @@ li {
 
 .dome6 {
 
-    width: 220px;
-    height: 200px;
+    width: 320px;
+    height: 150px;
     background-color: rgb(252, 252, 252);
-    margin-left: 140px;
-    margin-top: 100px;
+    margin-left: 19px;
+    margin-top: 20px;
     text-align: center;
     display: inline-flex;
 
@@ -1692,11 +1752,11 @@ li {
 
 .dome7 {
 
-    width: 220px;
-    height: 200px;
+    width: 320px;
+    height: 150px;
     background-color: rgb(252, 252, 252);
-    margin-left: 140px;
-    margin-top: 100px;
+    margin-left: 19px;
+    margin-top: 20px;
     text-align: center;
     display: inline-flex;
 
